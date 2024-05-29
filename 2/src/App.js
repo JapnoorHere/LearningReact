@@ -1,23 +1,21 @@
-import React,{ useState } from 'react'
-
-
+import React ,{useState} from 'react'
 
 export default function App() {
-    const[count,setCount] = useState(0);
+    const [count,setCount] = useState(0);
 
-    const handleClickIncr = ()=>{
+    const funInc = ()=>{
         setCount(count+1);
     }
-    
-    const handleClickDecr = ()=>{
+
+    const funDec = ()=>{
         setCount(count-1);
     }
-    return (
+
+  return (
     <div>
         <p>{count}</p>
-
-        <button onClick={handleClickIncr}>+</button>
-        <button onClick={handleClickDecr}>-</button>
+        <button onClick={funInc}>+</button>
+        <button onClick={funDec}>-</button>
     </div>
   )
 }
