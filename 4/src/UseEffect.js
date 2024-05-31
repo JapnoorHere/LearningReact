@@ -9,14 +9,14 @@ const UseEffect = () => {
     },[clicked])
   return (
     <div>
-        <button onClick={()=>{setClicked("Subscribe")}}>Subscribe</button>    
+        <button onClick={()=>{setClicked("Subscribe")}}>Subscribe</button>  
         <br/>
         <hr/>
-        <button onClick={()=>{setClicked("To")}}>To</button>    
+        <button onClick={()=>{setClicked("To")}}>To</button>
         <br/>
         <hr/>
-        <button onClick={()=>{setClicked1("Droid Bytes")}}>Droid Bytes</button>    
-        <h1>{clicked}</h1>
+        <button onClick={()=>{setClicked1("Droid Bytes")}}>Droid Bytes</button>   
+        <h1>{clicked}</h1> 
         <h1>{clicked1}</h1>
     </div>
   )
